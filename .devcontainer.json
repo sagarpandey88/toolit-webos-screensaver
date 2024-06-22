@@ -1,0 +1,20 @@
+{
+    "name": "My React Vite Devcontainer",
+    "build": {
+      "dockerfile": "./dockerfile"
+    },
+    "forwardPorts": [
+      { "containerPort": 3000, "hostPort": 3000 }
+    ],
+    "settings": {
+      "terminal.integrated.shell_IntegrationCustomizationsCsh": true,
+      "terminal.integrated.shell_IntegrationCustomizationsFish": true,
+      "terminal.integrated.shell_IntegrationCustomizationsKdeTerminal": true,
+      "terminal.integrated.shell_IntegrationCustomizationsOhMyZsh": true,
+      "terminal.integrated.shell_IntegrationCustomizationsPowerShell": true,
+      "terminal.integrated.shell_IntegrationCustomizationsTermux": true,
+      "terminal.integrated.shell_IntegrationCustomizationsWsl": true,
+      "terminal.integrated.shell_IntegrationCustomizationsGitBash": true
+    }
+  }
+  
