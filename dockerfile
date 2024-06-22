@@ -34,5 +34,5 @@ EXPOSE 3000
 WORKDIR /app/ui  # Assuming your entry point is in the ui directory
 
 # Configure Vite for development server with host access
-CMD ["vite", "--host", "--server"]
+#CMD ["vite", "--host", "--server"]
 
