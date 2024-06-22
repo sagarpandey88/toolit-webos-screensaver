@@ -19,7 +19,7 @@ FROM builder AS app
 COPY . .
 
 # Install dependencies for development (excluding build tools)
-RUN npm install
+#RUN npm install
 
 # Expose port for Express.js server (adjust port if needed)
 EXPOSE 3000
