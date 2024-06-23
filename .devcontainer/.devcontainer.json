@@ -1,0 +1,9 @@
+{
+  "name": "Development",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-20-bookworm",
+  "forwardPorts": [3000],  
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
