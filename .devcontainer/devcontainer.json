@@ -2,7 +2,6 @@
   "name": "Development",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-20-bookworm",
   "forwardPorts": [3000],  
-  "postCreateCommand": "chmod +x ./.devcontainer/start.sh && ./.devcontainer/start.sh",
   "extensions": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode"
