@@ -5,7 +5,7 @@
 cd api
 
 # Start the API process (assuming node index.js starts the API)
-node index.js &
+npm install && node index.js &
 
 # Move back to the root directory (optional)
 cd ..
@@ -14,5 +14,5 @@ cd ..
 cd ui
 
 # Start the UI process (assuming npm run dev starts the UI)
-npm run dev
+npm install && npm run dev
 
