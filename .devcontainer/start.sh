@@ -2,16 +2,16 @@
 
 
 # Change directory to the API project
-cd api
+cd server
 
 # Start the API process (assuming node index.js starts the API)
-node index.js &
+npm run start &
 
 # Move back to the root directory (optional)
 cd ..
 
 # Change directory to the UI project
-cd ui
+cd client
 
 # Start the UI process (assuming npm run dev starts the UI)
 npm run dev
