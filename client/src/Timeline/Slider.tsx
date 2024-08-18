@@ -8,7 +8,7 @@ const ImageCarousel = ({ images }) => {
   const handlers = useSwipeable({
     onSwipedLeft: () => goToNext(),
     onSwipedRight: () => goToPrevious(),
-    preventDefaultTouchmoveEvent: true,
+    //preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
 
