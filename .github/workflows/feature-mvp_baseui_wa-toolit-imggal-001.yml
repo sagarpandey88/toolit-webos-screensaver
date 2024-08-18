@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c19321087a294ea598f2550b525e10c2 }}/mcr.microsoft.com/devcontainers/typescript-node:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c19321087a294ea598f2550b525e10c2 }}/toolit-imagegallery:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'wa-toolit-imggal-001'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_ac67a32766bb498ab9d819e5cf8e8568 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c19321087a294ea598f2550b525e10c2 }}/mcr.microsoft.com/devcontainers/typescript-node:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c19321087a294ea598f2550b525e10c2 }}/toolit-imagegallery:${{ github.sha }}'
