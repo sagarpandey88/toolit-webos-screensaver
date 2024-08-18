@@ -5,7 +5,7 @@ export const getTimeline = async (
   tlId: string
 ): Promise<ITimelineMetadata[]> => {
   const obj = await fetch(
-    `http://localhost:3000/loadImages?user=${userId}&tlId=${tlId}`,
+    `https://ca-toolit-imggal-001.gentleriver-bc9bacd0.centralindia.azurecontainerapps.io/loadImages?user=${userId}&tlId=${tlId}`,
     { method: "GET" }
   );
   return await obj.json();
