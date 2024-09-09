@@ -1,0 +1,116 @@
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.timeline-item-content {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.timeline-date , .timeline-date-mobile  {
+  display: inline-block; /* Make the date wrap around the content */
+  background-color: #f8c6ca; /* Pastel pink background color */
+  color: #333; /* Darker text for contrast */
+  padding: 5px 10px;
+  border-radius: 15px; /* Rounded edges for pill shape */
+  font-weight: bold;
+  margin-right: 10px; /* Space between date pill and divider */
+  /* height: 20px; */
+  font-size: 13px;
+
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 10px; /* Adjust as needed so it's below any fixed headers */
+  align-self: flex-start;
+  z-index:100;
+}
+
+.timeline-divider {
+  position: relative;
+  padding: 0 15px;
+}
+
+.timeline-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+.timeline-line {
+  width: 2px;
+  background-color: green;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 5px; /* Adjust to center vertically with the circle */
+}
+
+.timeline-content {
+  padding: 10px;
+  width: 100%;
+}
+
+.timeline-header {
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  top: 50px;
+  background-color: #c6f8d4;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.timeline-content img {
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  display: block; /* Makes sure that images use block-level display */
+  max-width: 100%; /* Ensures image does not overflow its container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto;
+  width: 100%;
+}
+/* .timeline-content img:hover {
+  transform: scale(1.1); /* Scale image to 110% of its original size on hover */
+/* cursor: pointer;  Changes the cursor to indicate zoom action */
+/* } */
+@media only screen and (min-width: 1200px) {
+  .timeline-imagecontainer {
+    display: flex;
+  }
+
+  .timeline-content img {
+    margin: 10px 10px;
+    width: 30%;
+  }
+
+  .timeline-date-mobile{
+   display: none;
+  }
+
+  .timeline-header {
+    position:initial;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .timeline-date {
+    display: none;
+  }
+
+  .timeline-date-mobile{
+    width: 95%;
+  }
+  .timeline-divider
+  {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,48 @@
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.timeline-item-content {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.timeline-date {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.timeline-divider {
+  position: relative;
+  padding: 0 15px;
+}
+
+.timeline-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-line {
+  width: 2px;
+  background-color: green;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 5px; /* Adjust to center vertically with the circle */
+}
+
+.timeline-content {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+}
