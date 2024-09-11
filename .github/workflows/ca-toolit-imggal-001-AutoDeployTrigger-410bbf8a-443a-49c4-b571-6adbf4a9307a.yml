@@ -28,7 +28,6 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
-          registryUrl: https://index.docker.io/v1/
           registryUsername: ${{ secrets.CATOOLITIMGGAL001_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CATOOLITIMGGAL001_REGISTRY_PASSWORD }}
           containerAppName: ca-toolit-imggal-001
