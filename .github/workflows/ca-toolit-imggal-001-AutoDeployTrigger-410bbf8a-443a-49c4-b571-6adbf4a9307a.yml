@@ -1,15 +1,7 @@
-name: Trigger auto deployment for ca-toolit-imggal-001
+name: Container deployment ca-toolit-imggal-001
 
 # When this action will be executed
-on:
-  # Automatically trigger it when detected changes in repo
-  push:
-    branches: 
-      [ main ]
-    paths:
-    - '**'
-    - '.github/workflows/ca-toolit-imggal-001-AutoDeployTrigger-410bbf8a-443a-49c4-b571-6adbf4a9307a.yml'
-
+on: 
   # Allow manual trigger 
   workflow_dispatch:      
 
@@ -41,7 +33,7 @@ jobs:
           registryPassword: ${{ secrets.CATOOLITIMGGAL001_REGISTRY_PASSWORD }}
           containerAppName: ca-toolit-imggal-001
           resourceGroup: rg-toolit-imggal
-          imageToBuild: index.docker.io/v1/ca-toolit-imggal-001:${{ github.sha }}
+          imageToBuild: index.docker.io/v1/sagarpandey88/toolit-imagegallery:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
 
