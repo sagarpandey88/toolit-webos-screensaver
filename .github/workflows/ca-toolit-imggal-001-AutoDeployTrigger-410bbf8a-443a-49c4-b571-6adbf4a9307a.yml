@@ -33,7 +33,7 @@ jobs:
           registryPassword: ${{ secrets.CATOOLITIMGGAL001_REGISTRY_PASSWORD }}
           containerAppName: ca-toolit-imggal-001
           resourceGroup: rg-toolit-imggal
-          imageToBuild: index.docker.io/v1/${{ secrets.CATOOLITIMGGAL001_REGISTRY_USERNAME }}/toolit-imagegallery:${{ github.sha }}
+          imageToBuild: ${{ secrets.CATOOLITIMGGAL001_REGISTRY_USERNAME }}/toolit-imagegallery:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
 
