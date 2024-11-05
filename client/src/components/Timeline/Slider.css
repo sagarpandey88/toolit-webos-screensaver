@@ -19,7 +19,7 @@
   display: block;
 }
 
-button {
+.carousel  button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -28,10 +28,10 @@ button {
   cursor: pointer;
 }
 
-button:first-of-type {
+.carousel  button:first-of-type {
   left: 10px;
 }
 
-button:last-of-type {
+.carousel button:last-of-type {
   right: 10px;
 }

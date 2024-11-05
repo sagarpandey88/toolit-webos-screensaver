@@ -1,6 +1,6 @@
 import TimelineItem from "./TimelineItem";
 import ImageCarousel from "./Slider";
-import { ITimelineMetadata } from "../models/models";
+import { ITimelineMetadata } from "../../models/models";
 
 const Timeline = (props: ITimelineConfiguration) => {
   const formatDateToDDMMMYYYY = (date: Date) => {
